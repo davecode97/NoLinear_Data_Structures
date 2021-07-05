@@ -19,7 +19,7 @@ public class PruebaArbol {
     	
     	while(true){
     		out.println("------------------------------");
-    		out.println("           BINARY TREE        ");
+    		out.println("           Binary Tree        ");
     		out.println("------------------------------");
     		out.println("  1)..............Insert      ");
     		out.println("  2)..............PreOrder    ");
@@ -33,12 +33,12 @@ public class PruebaArbol {
     			try{
     				N = LeerTeclado.nextInt();
     				if(N<1||N>5){
-    					out.println("Error solo datos de 1 a 5");
+    					out.println("Data 1 to 5 only error");
     					continue;
     				}
     				break;	
     			}catch(InputMismatchException e){
-    				out.println("Error, solo introducir numeros enteros");
+    				out.println("Error, only enter whole numbers");
     				LeerTeclado.next();
     			}
     		}while(true);
@@ -49,19 +49,19 @@ public class PruebaArbol {
     			
     			case 2:
     				Preorden();
-    				out.println("Precione enter para continuar");
+    				out.println("Press enter to continue");
     				System.in.read();
     			break;
     			
     			case 3:
     				Inorden();
-    				out.println("Precione enter para continuar");
+    				out.println("Press enter to continue");
     				System.in.read();
     			break;
     			
     			case 4:
     				Posorden();
-    				out.println("Precione enter para continuar");
+    				out.println("Press enter to continue");
     				System.in.read();
     			break;
     			
@@ -72,11 +72,11 @@ public class PruebaArbol {
     	}
     }
     public static void InsertarDato()throws java.io.IOException{
-    	Dato = JOptionPane.showInputDialog("Inserte el numero de nodos que desea ingresar");
+    	Dato = JOptionPane.showInputDialog("Insert the number of nodes you want to enter");
     	int n = Integer.parseInt(Dato);
     	
     	for(int i=1; i<=n;i++){
-    		Dato = JOptionPane.showInputDialog("Dame el "+ i +" valor para colocar en el arbol");
+    		Dato = JOptionPane.showInputDialog("Give me the "+ i +" value to place in the tree");
     		valor = Integer.parseInt(Dato);
     		out.println(valor + " ");
     		arbol.InsertarNodo(valor);
