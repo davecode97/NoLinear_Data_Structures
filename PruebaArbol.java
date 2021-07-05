@@ -19,7 +19,7 @@ public class PruebaArbol {
     	
     	while(true){
     		out.println("------------------------------");
-    		out.println("         ARBOL BINARIO        ");
+    		out.println("           BINARY TREE        ");
     		out.println("------------------------------");
     		out.println("  1)..............Insert      ");
     		out.println("  2)..............PreOrder    ");
